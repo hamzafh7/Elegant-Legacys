@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Clothing Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="main-header">
+        <div class="logo">
+            <img src="2.png" width="400">
+            <img src="1.png" width="400" >
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">𝙷𝙾𝙼𝙴</a></li>
+                <li><a href="#collection">𝙲𝙾𝙻𝙻𝙴𝙲𝚃𝙸𝙾𝙽</a></li>
+                <li><a href="#categories">𝙲𝙰𝚃𝙴𝙶𝙾𝚁𝙸𝙴𝚂</a></li>
+                <li><a href="#about">𝙰𝙱𝙾𝚄𝚃 𝚄𝚂</a></li>
+                <li><a href="#contact">𝙲𝙾𝙽𝚃𝙰𝙲𝚃</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h2>Exquisite & Timeless Fashion</h2>
+            <p>Discover our latest collection of luxury clothing.</p>
+            <a href="#collection" class="btn">Explore Collection</a>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="category-section">
+        <h2>𝐎𝐔𝐑 𝐂𝐀𝐓𝐄𝐆𝐎𝐑𝐈𝐄𝐒</h2>
+        
+        <!-- Men's Fashion -->
+        <div class="category">
+            <h3>Old Money & Classic Style</h3>
+            <br>
+            <div class="gallery">
+                <div class="gallery-item" onclick="showProductDetails('Classic Suit', 'Black', 'Elegant suit with a classic fit.')">
+                    <img src="men1.jpg" alt="Men's Style 1">
+                    <h3>Classic Suit</h3>
+                </div>
+                <div class="gallery-item" onclick="showProductDetails('Luxury Coat', 'Gray', 'A luxurious coat made from the finest materials.')">
+                    <img src="men2.jpg" alt="Men's Style 2">
+                    <h3>Luxury Coat</h3>
+                </div>
+                <div class="gallery-item" onclick="showProductDetails('Casual Jacket', 'Blue', 'Casual yet stylish jacket perfect for any occasion.')">
+                    <img src="men3.jpg" alt="Men's Style 3">
+                    <h3>Casual Jacket</h3>
+                </div>
+            </div>
+        </div>
+        <br><br><br><br>
+
+        <!-- Women's Fashion -->
+        <div class="category">
+            <h3>Star Boy Style </h3>
+            <br>
+            <div class="gallery">
+                <div class="gallery-item" onclick="showProductDetails('Evening Gown', 'Red', 'A beautiful evening gown with intricate detailing.')">
+                    <img src="women1.jpg" alt="Women's Style 1">
+                    <h3>Evening Gown</h3>
+                </div>
+                <div class="gallery-item" onclick="showProductDetails('Designer Dress', 'Gold', 'A designer dress that exudes elegance and class.')">
+                    <img src="women2.jpg" alt="Women's Style 2">
+                    <h3>Designer Dress</h3>
+                </div>
+                <div class="gallery-item" onclick="showProductDetails('Luxury Handbag', 'Black', 'A luxury handbag made from premium leather.')">
+                    <img src="women3.jpg" alt="Women's Style 3">
+                    <h3>Luxury Handbag</h3>
+                </div>
+            </div>
+        </div>
+        <br><br><br><br><br>
+
+        <!-- Accessories -->
+        <div class="category">
+            <h3>Street Wear Style</h3>
+            <br>
+            <div class="gallery">
+                <div class="gallery-item" onclick="showProductDetails('Gold Necklace', 'Gold', 'A stunning gold necklace with intricate designs.')">
+                    <img src="accessories1.jpg" alt="Accessory 1">
+                    <h3>Gold Necklace</h3>
+                </div>
+                <div class="gallery-item" onclick="showProductDetails('Designer Sunglasses', 'Black', 'Designer sunglasses that offer both style and protection.')">
+                    <img src="accessories2.jpg" alt="Accessory 2">
+                    <h3>Designer Sunglasses</h3>
+                </div>
+                <div class="gallery-item" onclick="showProductDetails('Luxury Watch', 'Silver', 'A luxury watch with timeless appeal.')">
+                    <img src="accessories3.jpg" alt="Accessory 3">
+                    <h3>Luxury Watch</h3>
+                </div>
+            </div>
+        </div>
+        <br><br><br><br><br>
+
+        <!-- Footwear -->
+        <div class="category">
+            <h3>Normal Style</h3>
+            <br>
+            <div class="gallery">
+                <div class="gallery-item" onclick="showProductDetails('Leather Boots', 'Brown', 'Stylish leather boots perfect for any occasion.')">
+                    <img src="footwear1.jpg" alt="Footwear 1">
+                    <h3>Leather Boots</h3>
+                </div>
+                <div class="gallery-item" onclick="showProductDetails('Designer Sneakers', 'White', 'Comfortable and stylish designer sneakers.')">
+                    <img src="1pp.jpg" alt="Footwear 2">
+                    <h3>Designer Sneakers</h3>
+                </div>
+                <div class="gallery-item" onclick="showProductDetails('High-Heel Pumps', 'Red', 'Elegant high-heel pumps for special occasions.')">
+                    <img src="footwear3.jpg" alt="Footwear 3">
+                    <h3>High-Heel Pumps</h3>
+                </div>
+            </div>
+        </div>
+        <br><br><br><br><br>
+
+     <!--Accesoires--> 
+        <div class="category">
+            <h3>Accesoires</h3>
+            <br>
+            <div class="gallery">
+                <div class="gallery-item" onclick="showProductDetails('Leather Boots', 'Brown', 'Stylish leather boots perfect for any occasion.')">
+                    <img src="footwear1.jpg" alt="Footwear 1">
+                    <h3>Leather Boots</h3>
+                </div>
+                <div class="gallery-item" onclick="showProductDetails('Designer Sneakers', 'White', 'Comfortable and stylish designer sneakers.')">
+                    <img src="1pp.jpg" alt="Footwear 2">
+                    <h3>Designer Sneakers</h3>
+                </div>
+                <div class="gallery-item" onclick="showProductDetails('High-Heel Pumps', 'Red', 'Elegant high-heel pumps for special occasions.')">
+                    <img src="footwear3.jpg" alt="Footwear 3">
+                    <h3>High-Heel Pumps</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Details Modal -->
+    <div id="product-details" style="display: none;">
+        <h2 id="product-name"></h2>
+        <p id="product-color"></p>
+        <p id="product-description"></p>
+        <button onclick="hideProductDetails()">Close</button>
+    </div>
+    <br><br>
+    <section id="about" class="about-section"></section>
+    <h2 class="about"> - About us -  </h2>
+    <br>
+    <p class="son">Our clothing line is thoughtfully organized into distinct categories to enhance your shopping experience. We offer an extensive range for both men and women, with each category showcasing a variety of styles that cater to different occasions and preferences. From casual wear to formal attire, our categories ensure that you can easily find the perfect outfit for any event. Explore our men's and women's collections, where you’ll discover a variety of sizes, colors, and styles designed to fit and flatter every body type. As a new brand in Monastir City, we are committed to bringing fresh, contemporary fashion to our local community while staying true to our brand’s core values of quality and authenticity.</p>
+     <br><br><br>
+     <section id="contact" class="contact-section"></section>
+     <br>
+     <img src="ELEGANT LUNGO (7).png" width="1500">
+    <!-- Footer Section -->
+    <footer class="main-footer">
+        <p>&copy; 2024 LuxuryBrand. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript to handle product details modal -->
+    <script>
+        function showProductDetails(name, color, description) {
+            document.getElementById('product-name').innerText = name;
+            document.getElementById('product-color').innerText = 'Color: ' + color;
+            document.getElementById('product-description').innerText = description;
+            document.getElementById('product-details').style.display = 'block';
+        }
+
+        function hideProductDetails() {
+            document.getElementById('product-details').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
